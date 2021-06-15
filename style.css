@@ -83,7 +83,7 @@ height: 81px;
     border: 1px solid rgb(202, 202, 202);
     border-radius: 12px;
     overflow: hidden;
-    height: 267px;
+    /* height: 267px; */
     min-width: 450px;
   }
   .card:hover {
