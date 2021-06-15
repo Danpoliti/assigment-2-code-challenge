@@ -8,7 +8,11 @@ html {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   color: #666;
-  background: #F6F6F6;
+  background: #c3e8f7;
+  background-image: url(/img/cloud.png);
+  background-size: cover;
+  background-blend-mode: luminosity;
+
 }
 
 h1 {

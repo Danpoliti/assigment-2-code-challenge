@@ -74,7 +74,7 @@
     const dataRoot = document.getElementById("root");
     const dataImg = document.createElement("img");
     dataImg.setAttribute('class','logo');
-    dataImg.src = 'logo.png'
+    dataImg.src = 'img/logo.png'
 
     const container = document.createElement('div');
     container.setAttribute('class', 'container');
@@ -100,47 +100,47 @@
 
 
                 if (movie.title === 'Castle in the Sky') {
-                    movieImg.src = 'castle_poster.jpg'
+                    movieImg.src = 'img/castle_poster.jpg'
                 } else if (movie.title === 'Grave of the Fireflies') {
-                    movieImg.src = 'fireflies.jpg'
+                    movieImg.src = 'img/fireflies.jpg'
                 } else if (movie.title === 'My Neighbor Totoro') {
-                    movieImg.src = 'totoro.jpg'
+                    movieImg.src = 'img/totoro.jpg'
                 } else if (movie.title === `Kiki's Delivery Service`) {
-                    movieImg.src = 'kiki.jpg'
+                    movieImg.src = 'img/kiki.jpg'
                 } else if (movie.title === 'Only Yesterday') {
-                    movieImg.src = 'only.jpg'
+                    movieImg.src = 'img/only.jpg'
                 } else if (movie.title === 'Porco Rosso') {
-                    movieImg.src = 'porco.jpg'
+                    movieImg.src = 'img/porco.jpg'
                 } else if (movie.title === 'Pom Poko') {
-                    movieImg.src = 'pompoko.jpg'
+                    movieImg.src = 'img/pompoko.jpg'
                 } else if (movie.title === 'Whisper of the Heart') {
-                    movieImg.src = 'whisper.jpg'
+                    movieImg.src = 'img/whisper.jpg'
                 } else if (movie.title === 'Princess Mononoke') {
-                    movieImg.src = 'mononoke.png'
+                    movieImg.src = 'img/mononoke.png'
                 } else if (movie.title === 'My Neighbors the Yamadas') {
-                    movieImg.src = 'yamada.jpg'
+                    movieImg.src = 'img/yamada.jpg'
                 } else if (movie.title === 'Spirited Away') {
-                    movieImg.src = 'spiritedaway.jpg'
+                    movieImg.src = 'img/spiritedaway.jpg'
                 } else if (movie.title === 'The Cat Returns') {
-                    movieImg.src = 'catreturns.jpg'
+                    movieImg.src = 'img/catreturns.jpg'
                 } else if (movie.title === `Howl's Moving Castle`) {
-                    movieImg.src = 'moving.png'
+                    movieImg.src = 'img/moving.png'
                 } else if (movie.title === 'Tales from Earthsea') {
-                    movieImg.src = 'tales.jpg'
+                    movieImg.src = 'img/tales.jpg'
                 } else if (movie.title === 'Ponyo') {
-                    movieImg.src = 'ponyo.png'
+                    movieImg.src = 'img/ponyo.png'
                 } else if (movie.title === 'Arrietty') {
-                    movieImg.src = 'arrietty.png'
+                    movieImg.src = 'img/arrietty.png'
                 } else if (movie.title === 'From Up on Poppy Hill') {
-                    movieImg.src = 'poppyhill.jpg'
+                    movieImg.src = 'img/poppyhill.jpg'
                 } else if (movie.title === 'The Wind Rises') {
-                    movieImg.src = 'windrises.jpg'
+                    movieImg.src = 'img/windrises.jpg'
                 } else if (movie.title === 'The Tale of the Princess Kaguya') {
-                    movieImg.src = 'kaguya.jpg'
+                    movieImg.src = 'img/kaguya.jpg'
                 } else if (movie.title === 'When Marnie Was There') {
-                    movieImg.src = 'marnie.png'
+                    movieImg.src = 'img/marnie.png'
                 } else if (movie.title === 'The Red Turtle') {
-                    movieImg.src = 'redturtle.png'
+                    movieImg.src = 'img/redturtle.png'
                 }
 
                 const title = document.createElement('h1');
