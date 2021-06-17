@@ -1,75 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     console.log("Loaded!");
-
-//     const form = document.getElementById("form");
-//     const nickname = document.getElementById("nickname");
-//     const comment = document.getElementById("comment");
-//     const chat = document.getElementById("chat");
-//     const db = firebase.firestore();
-
-//     form.addEventListener("submit", function (event) {
-//         event.preventDefault();
-
-//         if (nickname.value && comment.value) {
-//             addComment(nickname.value, comment.value);
-//             comment.value = "";
-//         }
-//     });
-
-//     function addComment(nicknameValue, commentValue) {
-//         db.collection("Comment")
-//             .add({
-//                 nickname: nicknameValue,
-//                 comment: commentValue,
-//                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-//             })
-//             .then(function (docRef) {
-//                 console.log("Comment ID:", docRef.id);
-//             })
-//             .catch(function (error) {
-//                 console.error("Error adding comment", error);
-//             });
-//     }
-
-//     function deleteChat(id) {
-//         db.collection("Comment").doc(id).delete().then(function () {
-//             console.log('Document successfully deleted!');
-//         }).catch(function (error) {
-//             console.log("Error deleting document.", error);
-//         });
-//     }
-
-//     function init() {
-//         db.collection("Comment")
-//             .orderBy("timestamp", "asc")
-//             .onSnapshot(function (querySnapshot) {
-//                 chat.innerHTML = "";
-//                 querySnapshot.forEach((doc) => {
-//                     const li = document.createElement("li");
-//                     li.innerHTML = `${doc.data().nickname}: ${doc.data().comment}`;
-
-//                     li.style = `background: #e9e9e9;
-//             padding: 10px 26px;
-//             margin: 10px 0;
-//             border-radius: 40px;
-//             width: fit-content;`;
-
-//                     const span = document.createElement("span");
-//                     span.innerHTML = " &#10005;";
-//                     span.style = `margin: 0 16px 0 10px;
-//             color: red; cursor: pointer;`;
-//                     li.appendChild(span);
-//                     console.log("id", doc.id);
-//                     // span.onclick = ()=> console.log("Delete:", doc.id);
-//                     span.onclick = () => deleteChat(doc.id);
-
-
-//                     chat.appendChild(li);
-//                 });
-//             });
-//     }
-
-//     init();
 
     const dataRoot = document.getElementById("root");
     const dataImg = document.createElement("img");
@@ -153,13 +81,10 @@
                 movieDescription.textContent = `${movie.description}...`;
 
 
-                // const commentBox = document.createElement('form');
-                // commentBox.setAttribute('class', 'comment-box');
-                // commentBox.innerHTML = `<ul id="chat" style="list-style: none"></ul>`;
+
 
 
                 container.appendChild(movieCard);
-                // container.appendChild(commentBox);
                 movieCard.appendChild(movieImg);
                 movieCard.appendChild(title);
                 movieCard.appendChild(movieDescription);
@@ -171,8 +96,6 @@
     }
 
     request.send()
-
-    //   updateChat("jWxC9PucIwVOahuSl0os", "Updated Hi!");
 
 
 console.log("Ready!");
