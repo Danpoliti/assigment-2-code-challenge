@@ -1,7 +1,7 @@
-
 * {
   box-sizing: border-box
 }
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,8 +11,15 @@ html {
   background: #c3e8f7;
   background-image: url(../img/cloud.png);
   background-size: cover;
+  background-position-x: right;
+  /* max-width: 1400px; */
+  margin: auto;
   /* background-blend-mode: luminosity; */
+}
 
+body {
+  max-width: 1400px;
+  margin: auto;
 }
 
 h1 {
@@ -23,146 +30,179 @@ h1 {
   font-size: 1.5rem;
   color: white;
 }
+
 #root {
-    max-width: 1400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  /* img {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* img {
     display: block;
     margin:  auto;
     max-width: 100%;
   } */
-  p {
-    padding: 0 2.5rem 2.5rem;
-    margin: 0;
-  }
-  .logo {
-    margin: 2em;
-  }
-  .title {
-    display: flex;
-grid-area: title;
-margin-top: 0;
-margin-bottom: 0;
-font-size: 1.2em;
-/* text-align: center; */
-justify-content: space-around;
-align-items: center;
-padding:0;
-height: 81px;
-/* line-height: 2.5em; */
-  }
-  .description {
-    grid-area: description;
-    font-size: 0.8em;
-    padding: 1em;
-    padding-top: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 1em;
-  }
-  .movie-img {
-    grid-area: movie-img;
-    max-width: 200px;
-    max-height: 100%;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-right: 1px solid rgb(226, 226, 226);
-    margin:0;
-  }
-  .card {
-    background: white;
-    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-    "movie-img title"
-    "movie-img description";
-    /* margin: 1rem; */
-    border: 1px solid rgb(202, 202, 202);
-    border-radius: 12px;
-    overflow: hidden;
-    /* height: 267px; */
-    min-width: 405px;
-  }
-  .card:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-    transform: translate3D(0, -5px, 0);
-  }
-  /* .card {
+
+p {
+  padding: 0 2.5rem 2.5rem;
+  margin: 0;
+}
+
+.contactus {
+  background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4 51%, #E55D87 100%)
+}
+
+.contactus {
+  float: right;
+  margin: 3em 1em 0;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border: none;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+}
+
+.contactus:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0 2em 2em 2em;
+}
+
+.title {
+  display: flex;
+  grid-area: title;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  /* text-align: center; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  height: 81px;
+  /* line-height: 2.5em; */
+}
+
+.description {
+  grid-area: description;
+  font-size: 0.8em;
+  padding: 1em;
+  padding-top: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1em;
+}
+
+.movie-img {
+  grid-area: movie-img;
+  max-width: 200px;
+  max-height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-right: 1px solid rgb(226, 226, 226);
+  margin: 0;
+}
+
+.card {
+  background: white;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "movie-img title" "movie-img description";
+  /* margin: 1rem; */
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 12px;
+  overflow: hidden;
+  /* height: 267px; */
+  min-width: 405px;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -5px, 0);
+}
+
+/* .card {
     margin: 1rem;
     overflow: hidden;
     transition: all .2s linear;
   } */
+
 .container {
   display: grid;
-
 }
+
 .comment-box {
-  padding:16px;
+  padding: 16px;
 }
-  
-  @media screen and (min-width: 715px) {
-    .card {
-      flex: 1 1 calc(50% - 2rem);
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      
-      grid-gap: 1em;
-    
-    }
-    .card {
-      display: grid;
-      grid-template-areas: 
-      "title title"
-      "movie-img description";
-      height: 347px;
-      min-width: 400px;
-    }
-    .movie-img {
-      border-top-left-radius:initial;
-    }
-    .description {
-      grid-area: description;
-      font-size: 1em;
-      padding: 1em;
-      padding-top: 1em;
-      margin: 0;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .card {
-      flex: 1 1 calc(33% - 2rem);
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .description {
-      grid-area: description;
-      font-size: 1em;
-      padding: 1em;
-      padding-top: 1em;
-      margin: 0;
-    }
-  }
 
-  .card:nth-child(3n) h1 {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+@media screen and (min-width: 715px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
   }
-  
-  .card:nth-child(2n) h1 {
-    background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
   }
-  
-  .card:nth-child(5n) h1 {
-    background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+  .card {
+    display: grid;
+    grid-template-areas: "title title" "movie-img description";
+    height: 347px;
+    min-width: 400px;
   }
+  .movie-img {
+    border-top-left-radius: initial;
+  }
+  .description {
+    grid-area: description;
+    font-size: 1em;
+    padding: 1em;
+    padding-top: 1em;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .description {
+    grid-area: description;
+    font-size: 1em;
+    padding: 1em;
+    padding-top: 1em;
+    margin: 0;
+  }
+}
+
+.card:nth-child(3n) h1 {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.card:nth-child(2n) h1 {
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.card:nth-child(5n) h1 {
+  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
